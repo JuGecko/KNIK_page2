@@ -1,0 +1,324 @@
+*{
+    /*background-color: rgb(10, 10, 10);*/  
+    font-family: 'Rajdhani', sans-serif;
+    /*color: rgb(231, 229, 237);*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    color: rgb(231, 229, 237);
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+}
+/* Pierwszy div */
+#main{
+    background-position: 100%;
+    background: center;
+    margin: 0;
+    padding-bottom: 25%;
+    /*background: url(../css/img/strona-glowna.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    /*padding: 10px;*/
+    background-color: rgba(10, 10, 10, 0.494);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    width: 170px;
+    height: auto;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    float: none;
+    display: inline-block;
+}
+
+/* Navbar */
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 26px;
+    padding: 30px;
+    color: rgb(231, 229, 237);
+    display: block;
+}
+header .navbar ul li a:hover{
+    background-color: rgba(10, 10, 10, 0.494);
+    animation: cubic-bezier(0.23, 1, 0.320, 1);
+}
+header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    width: 200px;
+    background-color: rgba(10, 10, 10, 0.494);
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    /*transition: opacity 200ms ease-in-out;*/
+        /*ramka do każdego prostokąta*/
+    /*border-top: 1px solid rgb(5, 5, 5);*/
+}
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+/* Koniec navbar */
+
+p{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    /*padding-top: 8%;*/
+    /*padding: 10px;*/
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 12%;
+    /*margin-block-start: 12%;*/
+    margin-bottom: 18px;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    /*padding: 2%;*/
+    margin: 5px;
+    padding: 0;
+    justify-content: center;
+    float: center;
+}
+/* Sekcja Projekty */
+#projekty{
+    background-color: rgba(10, 10, 10);
+    text-align: center;
+    margin: 0;
+    padding-top: 4%;
+    padding-bottom: 8%;
+        /*efekt scrollu-> background: fixed*/
+    /*background: fixed;*/
+    /*background-position: 100%;
+    background-repeat: no-repeat;
+    background: center;*/
+}
+h2{  
+    font-size: 40px;
+    font-weight: bold;
+    /*padding: 2%;*/
+    margin: 20px;    
+    padding: 0;
+    justify-content: center;
+}
+.subtitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    /*padding: 2%;*/
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0;
+    justify-content: center;
+    float: center;
+}
+
+
+/* Sekcja O nas*/
+#o_nas{
+    margin: 0;
+}
+.o_nas_bg{
+    margin: 0;
+    /*background-color: rgba(10, 10, 10);*/
+        /*efekt scrollu background: fixed*/
+    /*background: fixed;*/
+    background-repeat: no-repeat;
+    background: center;
+    text-align: center;
+    float: center;
+    padding-top: 7%;
+    padding-bottom: 12%;
+    background-position: 100%;
+}
+/* Szary prostokąt za tekstem: + tekst*/
+.o_nas2{
+    /*font-display: center;*/
+    color: black;
+    background-color: rgb(249, 247, 255);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.o_nas_text1{
+    float: left;
+    width: 45%;
+    max-width: 50%;
+    height: auto;
+    margin-left: 70px;
+    padding: 30px;
+    justify-content: center;
+    font-size: 22px;
+    display: inline-flex;
+    text-align: justify;
+}
+.o_nas_text2{
+    float: center;
+    width: 45%;
+    max-width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 5%;
+    /*margin-bottom: 40px;*/
+    padding: 30px;
+    /*margin: 5px;*/
+    justify-content: center;
+    font-size: 22px;
+    display: inline-flex;
+    text-align: justify;
+}
+/* Logo Knik w sekcji o nas */
+.logo_o_nas{ 
+    width: auto;
+    height: auto;
+    max-width: 20%;
+    max-height: auto;
+    padding: 30px;
+    margin-right: 10%;
+    margin-top: 30px;
+    display: block;
+    float: right;
+    justify-content: center;
+    align-items: center;
+        /* Biały prostokąt za logiem */
+    background-color: rgba(231, 229, 237, 0.197);
+    backdrop-filter: blur(20px);
+}
+
+
+/* Sekcja Łazik */
+#lazik{
+    margin: 0;
+}
+.lazik_bg{
+    margin: 0;
+    background: center;
+    /*background-color: rgba(10, 10, 10);*/
+        /*efekt scrollu background: fixed*/
+    /*background: fixed;*/
+    background-repeat: no-repeat;
+    text-align: center;
+    float: center;
+    padding-top: 7%;
+    padding-bottom: 12%;
+    background-position: 100%;
+}
+.lazik2{
+    /*margin: 0;*/
+    color: black;
+    background-color: rgb(249, 247, 255);
+    padding-bottom: 100px;
+}
+.lazik_text1{
+    float: left;
+    width: 45%;
+    max-width: 50%;
+    height: auto;
+    margin-left: 70px;
+    padding: 30px;
+    justify-content: center;
+    font-size: 22px;
+    display: inline-flex;
+    text-align: justify;
+    background-color: inherit;
+}
+.lazik_img1{
+    width: auto;
+    height: auto;
+    max-width:25%;
+    max-height: auto;
+    padding: 25px;
+    margin-right: 10%;
+    /*margin-top: 30px;*/
+    display: block;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+.lazik_text2{
+    float: right;
+    width: 45%;
+    max-width: 50%;
+    height: auto;
+    /*margin-left: 70px;*/
+    padding: 30px;
+    justify-content: center;
+    font-size: 22px;
+    display: inline-flex;
+    text-align: justify;
+}
+.lazik_img2{
+    width: auto;
+    height: auto;
+    max-width:25%;
+    max-height: auto;
+    padding: 25px;
+    margin-right: 10%;
+    /*margin-top: 30px;*/
+    display: block;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* stopka
+#footer{
+    background-color: rgba(10, 10, 10, 0.494);
+    height: auto;
+    display: inline-flex;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+#footer .logo{
+    width: 150px;
+    height: auto;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    float: none;
+    display: inline-block;
+}
+.social_media{
+    width: 30px;
+    height: 30px;
+    /*padding: 5px;
+    margin: 10px;
+    /*margin-left: 60%;
+    float: right;
+}
+*/
