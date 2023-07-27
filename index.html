@@ -9,32 +9,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
-    <!--<a href="https://www.flaticon.com/free-icons" title="icons">Facebook, mail and Instagram icons created by Freepik - Flaticon</a>-->
-    <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a> -->
+    <!-- Font Awesome Icons: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
+
 <!-- Strona główna -->
 <div id="main" style="background-image: url(css/img/strona-glowna.png);">
-<header>
-<!-- Logo u góry: -->
-<img src="css/img/lewy-gorny-rog-strony.png" alt="KNIK" class="logo">
-<!-- Navbar: -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#o_nas">O nas</a></li>
-            <li><a href="#projekty">Projekty</a>
-                <ul>
-                    <li><a href="#lazik">Łazik</a></li>
-                    <li><a href="#balony_stratosferyczne">Balony <br>stratosferyczne</a></li>
-                    <li><a href="#warsztaty">Warsztaty</a></li>
-                </ul>
-            </li>
-            <li><a href="#zespol">Zespół</a></li>
-        </ul>
+<header id="navbar">
+    <!-- Navbar: -->
+    <nav class="navbar-container container">
+       <img src="css/img/lewy-gorny-rog-strony.png" class="logo" alt="KNIK">
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                <li class="navbar-item"><a class="navbar-link" href="#o_nas">O nas</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#projekty">Projekty</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#zespol">Zespół</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
+<section class="welcome">
     <h1>Koło Naukowe Inżynierii Kosmicznej UZ</h1>
     <h3>Zrzeszamy ludzi zainteresowanych kosmosem i nie tylko</h3>
+</section>
 </div>
 
 <!-- O nas -->
@@ -42,16 +50,15 @@
     <section class="o_nas_bg" style="background-image: url(css/img/sekcja\ o\ nas.png);">
         <h2>O nas</h2>
     </section>
-    <div class="o_nas2">
-        <section>
+    <div class="o_nas_white">
+        <section class="o_nas_content">
             <p class="o_nas_text1">
                 Międzywydziałowe Koło Naukowe Inżynierii Kosmicznej Uniwersytetu Zielonogórskiego (KNIK) zrzesza ludzi żywo zainteresowanych szeroko pojętą tematyką inżynierii kosmicznej. Zajmujemy się realizacją projektów, które w swej tematyce oscylują wokół zagadnień związanych z kosmosem i eksploracją wszechświata.
             </p>
+            <img src="css/img/KNIK UZ(1).png" alt="logo KNIK" class="logo_o_nas">
         </section>
-        <section>
-                <img src="css/img/KNIK UZ(1).png" alt="logo KNIK" class="logo_o_nas">
-        </section>
-        <section>
+
+        <section class="o_nas_content">
             <p class="o_nas_text2">
                 KNIK powstało w listopadzie 2020 roku z inicjatywy prof. Marka Banaszkiewicza, prof. Mirosława Galickiego oraz studentów wielu wydziałów Uniwersytetu Zielonogórskiego. Koło działa pod egidą UZ i we współpracy z Laboratorium Dynamiki Manipulatorów Satelitarnych CBK PAN w Zielonej Górze.
             </p>
@@ -62,9 +69,9 @@
 <!-- Projekty -->
 <div id="projekty">
     <h2>Projekty</h2>
-    <h3 class="subtitle">
+    <p class="subtitle">
         Naszym największym projektem jest stworzenie łazika autonomicznego. <br>Dodatkowo wypuszczamy balony stratosferyczne oraz prowadzimy warsztaty dla szkół podstawowych i średnich.
-    </h3>
+    </p>
 </div>
 
 <!-- Łazik -->
@@ -72,76 +79,221 @@
     <section class="lazik_bg" style="background-image: url(css/img/sekcja\ łazik.png);">
         <h2>Łazik</h2>
     </section>
-    <div class="lazik2">
-        <section class="lazik_text1">
-            <p>
-                Budowę łazika marsjańskiego realizujemy w ramach środków, które pozyskaliśmy dzięki 
-                udziałowi w konkursie „Klakson - Impuls do innowacji”. Projekt jest dotowany przez Samorząd 
-                Województwa Lubuskiego. Przy projekcie współpracujemy również z Laboratorium Dynamiki Manipulatorów 
-                Satelitarnych CBK PAN w Zielonej Górze, które dostarczyło nam platformę jezdną do eksperymentów. 
+    <div class="lazik_white">
+        <section class="lazik_content">
+            <p class="lazik_text1">
+                Budowę łazika marsjańskiego realizujemy w ramach środków, które pozyskaliśmy dzięki udziałowi w konkursie „Klakson - Impuls do innowacji”. Projekt jest dotowany przez Samorząd Województwa Lubuskiego. Przy projekcie współpracujemy również z Laboratorium Dynamiki Manipulatorów Satelitarnych CBK PAN w Zielonej Górze, które dostarczyło nam platformę jezdną do eksperymentów. 
                 <br>
-                Obecnie pracujemy nad własnym podwoziem i konstrukcją manipulatora. 
-                Nasz łazik będzie posiadał elementy wydrukowane w technologii druku 3D z użyciem 
-                naszej autorskiej komory.
+                Obecnie pracujemy nad własnym podwoziem i konstrukcją manipulatora. Nasz łazik będzie posiadał elementy wydrukowane w technologii druku 3D z użyciem naszej autorskiej komory.
             </p>
+            <img src="css/img/Zdjęcia/sekcja-lazik-1-zdjecie.png" alt="Łazik" class="lazik_img1">
         </section>
-        <section>
-                <img src="css/img/Zdjęcia/sekcja-lazik-1-zdjecie.png" alt="Łazik" class="lazik_img1">
-        </section>
-        <br>
-        <section>
+
+        <section class="lazik_content">
             <img src="css/img/Zdjęcia/sekcja-lazik-2-zdjecie.png" alt="Budowa łazika" class="lazik_img2">
-        </section>
-        <section>
             <p class="lazik_text2">
-            Naszym celem w perspektywie następnych dwóch lat jest budowa półautonomicznego 
-            studenckiego łazika marsjańskiego, który zmierzy się z konstrukcjami najlepszych drużyn 
-            Europy podczas European Rover Challenge (ERC). ERC to największe wydarzenie robotyczno-kosmiczne 
-            w Europie skierowane do świata nauki i biznesu, sektora nowych technologii oraz do szerokiej 
-            publiczności. Zawody European Rover Challenge, podobnie jak University Rover Challenge, 
-            należą do Rover Challenge Series - ligi najbardziej prestiżowych zawodów robotycznych na świecie.
+                Naszym celem w perspektywie następnych dwóch lat jest budowa półautonomicznego studenckiego łazika marsjańskiego, który zmierzy się z konstrukcjami najlepszych drużyn Europy podczas European Rover Challenge (ERC). ERC to największe wydarzenie robotyczno-kosmiczne w Europie skierowane do świata nauki i biznesu, sektora nowych technologii oraz do szerokiej publiczności. Zawody European Rover Challenge, podobnie jak University Rover Challenge, należą do Rover Challenge Series - ligi najbardziej prestiżowych zawodów robotycznych na świecie.
             </p>
         </section>
     </div>
 </div>
 
-
-
-
-
-
-
 <!-- Balony stratosferyczne -->
 <div id="balony_stratosferyczne">
-    <section class="balony_bg" style="background-image: url(css/img/sekcja\ łazik.png);">
+    <section class="balony_bg" style="background-image: url(css/img/sekcja\ balony\ stratosferyczne.png)">
         <h2>Balony stratosferyczne</h2>
     </section>
-<div class="balony2">
-    <section>
-        <p class="balony_text1">
-            Budowę łazika marsjańskiego realizujemy w ramach środków, które pozyskaliśmy dzięki udziałowi w konkursie „Klakson - Impuls do innowacji”. Projekt jest dotowany przez Samorząd Województwa Lubuskiego. Przy projekcie współpracujemy również z Laboratorium Dynamiki Manipulatorów Satelitarnych CBK PAN w Zielonej Górze, które dostarczyło nam platformę jezdną do eksperymentów. 
-            <br>
-            Obecnie pracujemy nad własnym podwoziem i konstrukcją manipulatora. Nasz łazik będzie posiadał elementy wydrukowane w technologii druku 3D z użyciem naszej autorskiej komory.
-        </p>
-    </section>
-    <section>
-            <img src="css/img/Zdjęcia/sekcja-lazik-1-zdjecie.png" alt="Łazik" class="balony_img1">
-    </section>
-</div>
+    <div class="balony_white">
+        <section class="balony_content">
+            <p class="balony_text1">
+                Budowa i start eksperymentalnego balonu stratosferycznego „Ferment UZ”
+                <br>
+                W ramach projektu balonowego „FermentUZ” realizujemy cykl startów balonów wysokościowych wraz z eksperymentami do stratosfery. W ramach poszczególnych misji w ładunku użytecznym umieszczamy urządzenia pozwalające na prowadzenie łączności radiowej, przesył danych, wykonanie zdjęć, filmów, pomiarów temperatury, wilgotności, wysokości, poziomu promieniowania czy ciśnienia. 
+            </p>
+            <img src="css/img/Zdjęcia/balon-1-zdjecie.png" alt="Zespół" class="balony_img1">
+        </section>
+
+        <section class="balony_content">
+            <img src="css/img/Zdjęcia/balon-2-zdjecie.png" alt="Balony stratosferyczne" class="balony_img2">
+            <p class="balony_text2">
+            Ładunek podwieszany jest pod napełnionym helem balonem, który następnie wznosi się na wysokość w okolicach 30 - 40 km nad poziomem morza. Na tak ekstremalnych wysokościach panują praktycznie kosmiczne warunki - niebo jest czarne i widać z góry błękit Ziemi. Atmosfera jest dodatkowo bardzo rozrzedzona, a temperatura dochodzi do około -70 stopni Celsjusza.
+            </p>
+        </section>
+
+        <section class="balony_content">
+            <p class="balony_text3"> 
+                Pierwsza testowa misja stratosferyczna zakończyła się sukcesem. Balon wraz z ładunkiem o wadze 350g wzniósł się na wysokość 27 707 m n.p.m. Wyniesiono radiosondę RS41 nadającą na paśmie 70cm transmisje APRS i RTTY oraz podstawowy zestaw czujników działających na platformie Arduino. Po szczęśliwym lądowaniu ze spadochronem kapsuła z eksperymentem została odnaleziona pod Szczecinem!
+            </p>
+            <!-- Wideo -->
+            <iframe class="balony_video" src="https://www.youtube.com/embed/-QBPMzYPko4" title="Balony - wideo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+    </div>
 </div>
 
+<!-- Warsztaty -->
+<div id="warsztaty">
+    <section class="warsztaty_bg" style="background-image: url(css/img/sekcja\ warsztaty.png)">
+        <h2>Warsztaty</h2>
+    </section>
+    <div class="warsztaty_white">
+        <section class="warsztaty_content">
+            <p class="warsztaty_text1">
+                Współtworzyliśmy warsztaty prowadzone w ramach projektu SpaceRegion, który był realizowany przez Laboratorium Dynamiki Manipulatorów Satelitarnych. Prowadziliśmy zajęcia w CKZiU nr 1 "Budowlanka",  III LO im. prof. T. Kotarbińskiego oraz CKZiU Elektronik. Uczniowie podczas zajęć modelowali 3D, zmierzyli się z podstawami programowania na Arduino, a także dowiedzieli się na czym polega krótkofalarstwo.
+            </p>
+            <img src="css/img/Zdjęcia/warsztay-1-zdjecie.png" alt="Zespół" class="warsztaty_img1">
+        </section>
 
-<!-- na koncu odkomentuj:
-        <footer id="footer">
-        section
-         <img src="css/img/lewy-dol-stopka.png" alt="KNIK" class="logo">
-         <img src="css/img/Ikony/email.png" alt="mail" class="social_media"><p>uzknik@gmail.com</p>
-        section
-        section
-            <img src="css/img/Ikony/facebook.png" alt="FB" href="" class="social_media">
-            <img src="css/img/Ikony/instagram.png" alt="IG" href="" class="social_media">
-        section
-    </footer>
--->
+        <section class="warsztaty_content">
+            <img src="css/img/Zdjęcia/warsztaty-2-zdjecie.png" alt="Zajęcia" class="warsztaty_img2">
+            <p class="warsztaty_text2">
+                Aktualnie w ramach Europejskiego Korpusu Solidarności prowadzimy cykl warsztatów dla szkół podstawowych, które współtworzone są z Centrum Nauki Keplera - Planetarium Wenus oraz zajęcia dla szkół średnich, które realizujemy we współpracy z Wydziałem Informatyki, Elektrotechniki i Automatyki UZ.
+                <br>
+                Uczniowie podczas zajęć poszerzają swoją wiedzę z zakresu astronomii, inżynierii kosmicznej oraz mają możliwość modelowania 3D czy też zmierzenia się z podstawami programowania.
+            </p>
+        </section>
+    </div>
+</div>
+
+<!-- Zespół -->
+<div id="zespol">
+    <h2>Zespół</h2>
+    <p class="subtitle">
+        Nasz zespół tworzą studenci Uniwersytetu Zielonogórskiego oraz uczniowie szkół średnich z Zielonej Góry
+    </p>
+</div>
+
+<!-- Studenci -->
+<div id="studenci">
+    <section class="studenci_bg" style="background-image: url(css/img/sekcja\ zespol.png)">
+        <h2>Studenci</h2>
+    </section>
+
+    <!-- Karuzela -->
+<section id="slider">
+    <div class="container_slider wide">
+        <div class="swiper" id="swiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="css/img/Członkowie/bartosz_biczuk.png" alt="Bartosz Biczuk" />
+                        <figcaption>
+                            Fornalutx, Mallorca, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="css/img/Członkowie/kozlowski-bartek.png" alt="Sevilla, Spain" />
+                        <figcaption>
+                            Fornalutx, Mallorca, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="css/img/Członkowie/grabas-piotr.png" alt="Fornalutx, Mallorca, Spain" />
+                        <figcaption>
+                            Fornalutx, Mallorca, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="img/spain-4.jpg" alt="Calle Niño de Guevara, 1, 29008 Málaga, Spain" />
+                        <figcaption>
+                            Calle Niño de Guevara, 1, 29008 Málaga, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="img/spain-5.jpg" alt="Valldemossa, Spain" />
+                        <figcaption>
+                            Valldemossa, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="img/spain-6.jpg" alt="Cala S'Almunia in Mallorca, Spain" />
+                        <figcaption>
+                            Cala S'Almunia in Mallorca, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="css/img/Członkowie/kozlowski-bartek.png" alt="Sevilla, Spain" />
+                        <figcaption>
+                            Calle Niño de Guevara, 1, 29008 Málaga, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="css/img/Członkowie/kozlowski-bartek.png" alt="Sevilla, Spain" />
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="css/img/Członkowie/kozlowski-bartek.png" alt="Sevilla, Spain" />
+                        <figcaption>
+                            Calle Niño de Guevara, 1, 29008 Málaga, Spain
+                        </figcaption>
+                    </figure>
+                </div>  <!-- end swiper-slide -->
+            </div> <!-- end swiper-wrapper -->
+
+            <div class="swiper-custom-nav">
+                <svg width="64" height="64" viewBox="0 0 64 64" id="nav-left" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32 2.79753e-06C14.3269 4.34256e-06 -4.34256e-06 14.3269 -2.79753e-06 32C-1.2525e-06 49.6731 14.3269 64 32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 1.2525e-06 32 2.79753e-06ZM28.9334 24.3999C28.6667 24.1333 28.4 23.9999 28 23.9999C27.6 23.9999 27.3334 24.1333 27.0667 24.3999L20.4 31.0666L20.4 31.0667C20.2 31.2667 20.075 31.5041 20.025 31.751C19.9417 32.1624 20.0666 32.6 20.4 32.9333L27.0667 39.6C27.6 40.1333 28.4 40.1333 28.9333 39.6C29.4667 39.0667 29.4667 38.2667 28.9333 37.7333L24.5334 33.3334L42.7222 33.3334C43.4889 33.3334 44 32.8 44 32C44 31.2 43.4889 30.6667 42.7222 30.6667L24.5333 30.6667L28.9334 26.2666C29.4667 25.7333 29.4667 24.9333 28.9334 24.3999Z" fill="lightgrey"/>
+                </svg>
+
+                <svg width="64" height="64" viewBox="0 0 64 64" id="nav-right" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64ZM35.0666 39.6001C35.3333 39.8667 35.6 40.0001 36 40.0001C36.4 40.0001 36.6666 39.8667 36.9333 39.6001L43.6 32.9334L43.6 32.9333C43.8 32.7333 43.925 32.4959 43.975 32.249C44.0583 31.8376 43.9334 31.4 43.6 31.0667L36.9333 24.4C36.4 23.8667 35.6 23.8667 35.0667 24.4C34.5333 24.9333 34.5333 25.7333 35.0667 26.2667L39.4666 30.6666H21.2778C20.5111 30.6666 20 31.2 20 32C20 32.8 20.5111 33.3333 21.2778 33.3333H39.4667L35.0666 37.7334C34.5333 38.2667 34.5333 39.0667 35.0666 39.6001Z" fill="lightgrey"/>
+                </svg>
+            </div> <!-- end swiper-custom-nav -->
+
+            <div class="swiper-custom-pagination"></div>
+        </div> <!-- end swiper -->
+    </div> <!-- end container -->
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/karuzela.js"></script>
+</div>
+
+<!-- Szkoły średnie -->
+<div id="szkoly_srednie">
+    <section class="szk_srednie_bg" style="background-image: url(css/img/sekcja\ szkol\ srednich.png)">
+        <h2>Szkoły średnie</h2>
+    </section>
+    <div class="szk_srednie_white">
+        <section class="szk_srednie_content">
+            <p class="szk_srednie_text1">
+                Koło Naukowe Inżynierii Kosmicznej UZ posiada specjalnie utworzoną sekcję dla szkół średnich. Każda osoba, która nie jest jeszcze studentem, a ma chęci do działania może do nas przyjść i rozwijać swoje umiejętności oraz zainteresowania.
+            </p>
+            <img src="css/img/Zdjęcia/sekcja-szkol-srednich-1-zdjecie.png" alt="Zespół" class="szk_srednie_img1">
+        </section>
+    </div>
+</div>
+
+<!-- Działanie toggle w navbarze -->
+<script src="js/navbar_toggle.js"></script>
+
+<!-- Scroll up --> <!-- Spaceship icon created by Freepik -->
+<script src="js/scroll_up.js"></script>
+<img src="css/img/Ikony/spaceship.png" alt="Go up" onclick="goToTop()" id="goToTop">
+
+<!-- Stopka -->
+<footer id="footer">
+    <section class="footer_content">
+        <img src="css/img/lewy-dol-stopka.png" alt="KNIK" class="logo">
+        <aside>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a class="fa fa-envelope-o"></a><p class="email">uzknik@gmail.com</p>
+        </aside>
+    </section>
+</footer>
 </body>
 </html>
