@@ -8,6 +8,10 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+:root{
+    --knik-white: var(--knik-white);
+    --knik-black: rgb(10, 10, 10);
+}
 body {
     margin: 0;
     color: rgb(231, 229, 237);
@@ -63,7 +67,7 @@ p{
 
 /* Navbar */
 :root {
-    --navbar-bg-color: rgba(10, 10, 10);
+    --navbar-bg-color: rgb(10, 10, 10);
     --navbar-text-color: rgb(231, 229, 237);
     --navbar-text-color-focus: white;
     --navbar-bg-contrast: rgb(20, 20, 20);
@@ -168,12 +172,12 @@ header .logo{
     visibility: hidden;
     left: 0;
     right: 0;
-  }
+}
 #navbar-toggle[aria-expanded="true"] + #navbar-menu {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 1;
     visibility: visible;
-  }
+}
 .navbar-links {
     list-style: none;
     position: absolute;
@@ -222,7 +226,6 @@ header .logo{
 }
 .o_nas_bg{
     margin: 0;
-    /*background: fixed;*/
     text-align: center;
     float: center;
     padding-top: 8%;
@@ -234,17 +237,11 @@ header .logo{
 .o_nas_white{
     /*margin: 0;*/
     color: black;
-    background-color: rgb(249, 247, 255);
+    background-color: var(--knik-white);
     padding-bottom: 5em;
     padding-top: 5em;
 }
-.o_nas_text1{
-    width: 50%;
-    height: auto;
-    padding: 70px;
-    /*margin-left: 5em;*/
-}
-.o_nas_text2{
+.o_nas_text{
     width: 50%;
     height: auto;
     padding: 70px;
@@ -256,9 +253,8 @@ header .logo{
     max-width: 80%;
     max-height: auto;
     padding: 20px;
-        /* Biały prostokąt za logiem */
-    background-color: rgba(231, 229, 237, 0.197);
-    backdrop-filter: blur(20px);
+        /* Biały prostokąt za logiem
+    background-color: rgba(231, 229, 237, 0.197); */
 }
 .o_nas_content{
     float: center;
@@ -276,7 +272,7 @@ header .logo{
         padding-bottom: 2em;
         padding-top: 2em;
     }
-    .o_nas_text1, .o_nas_text2{
+    .o_nas_text{
         width: 100%;
         max-width: none;
         padding: 30px;
@@ -294,16 +290,13 @@ header .logo{
 
 /* Sekcja Projekty */
 #projekty{
-    background-color: rgba(10, 10, 10);
+    background-color: var(--knik-black);
     margin: 0;
     padding-top: 4em;
     padding-bottom: 4em;
     /*border: 8px;
     border-style: solid;
     border-color: black;*/
-    /*background: fixed;*/
-    /*background-position: 100%;
-    background: center;*/
     text-align: center;
     justify-content: center;
     float: center;
@@ -330,7 +323,6 @@ header .logo{
 }
 .lazik_bg{
     margin: 0;
-    /*background: fixed;*/
     text-align: center;
     float: center;
     padding-top: 8%;
@@ -341,30 +333,16 @@ header .logo{
 .lazik_white{
     /*margin: 0;*/
     color: black;
-    background-color: rgb(249, 247, 255);
+    background-color: var(--knik-white);
     padding-bottom: 5em;
     padding-top: 5em;
 }
-.lazik_text1{
+.lazik_text{
     width: 50%;
     height: auto;
     padding: 70px;
-    /*margin-left: 5em;*/
 }
-.lazik_img1{
-    width: 400px;
-    height: auto;
-    max-width: 80%;
-    max-height: auto;
-    padding: 20px;
-}
-.lazik_text2{
-    width: 50%;
-    height: auto;
-    padding: 70px;
-    /*margin-left: 5em;*/
-}
-.lazik_img2{
+.lazik_img{
     width: 400px;
     height: auto;
     max-width: 80%;
@@ -386,12 +364,11 @@ header .logo{
         padding-bottom: 2em;
         padding-top: 2em;
     }
-    .lazik_text1, .lazik_text2{
+    .lazik_text{
         width: 100%;
         max-width: none;
         padding: 30px;
         margin: 0;
-        /* Zapytaj! */
         text-align: center;
     }
     .lazik_content{
@@ -410,9 +387,6 @@ header .logo{
 .balony_bg{
     margin: 0;
     /*background-color: rgba(10, 10, 10);*/
-        /*efekt scrollu background: fixed*/
-    /*background: fixed;*/
-    /*background-repeat: no-repeat;*/
     text-align: center;
     float: center;
     padding-top: 8%;
@@ -423,41 +397,22 @@ header .logo{
 .balony_white{
     /*margin: 0;*/
     color: black;
-    background-color: rgb(249, 247, 255);
+    background-color: var(--knik-white);
     padding-bottom: 5em;
     padding-top: 5em;
 }
-.balony_text1{
+.balony_text{
     width: 50%;
     height: auto;
     padding: 70px;
     /*margin-left: 5em;*/
 }
-.balony_img1{
+.balony_img{
     width: 400px;
     height: auto;
     max-width: 80%;
     max-height: auto;
     padding: 20px;
-}
-.balony_text2{
-    width: 50%;
-    height: auto;
-    padding: 70px;
-    /*margin-left: 5em;*/
-}
-.balony_img2{
-    width: 400px;
-    height: auto;
-    max-width: 80%;
-    max-height: auto;
-    padding: 20px;
-}
-.balony_text3{
-    width: 50%;
-    height: auto;
-    padding: 70px;
-    /*margin-left: 5em;*/
 }
 .balony_video{
     width: 400px;
@@ -479,7 +434,7 @@ header .logo{
         padding-bottom: 2em;
         padding-top: 2em;
     }
-    .balony_text1, .balony_text2, .balony_text3{
+    .balony_text{
         width: 100%;
         max-width: none;
         padding: 30px;
@@ -506,7 +461,6 @@ header .logo{
 }
 .warsztaty_bg{
     margin: 0;
-    background: fixed;
     text-align: center;
     float: center;
     padding-top: 8%;
@@ -517,30 +471,17 @@ header .logo{
 .warsztaty_white{
     /*margin: 0;*/
     color: black;
-    background-color: rgb(249, 247, 255);
+    background-color: var(--knik-white);
     padding-bottom: 5em;
     padding-top: 5em;
 }
-.warsztaty_text1{
+.warsztaty_text{
     width: 50%;
     height: auto;
     padding: 70px;
     /*margin-left: 5em;*/
 }
-.warsztaty_img1{
-    width: 400px;
-    height: auto;
-    max-width: 80%;
-    max-height: auto;
-    padding: 20px;
-}
-.warsztaty_text2{
-    width: 50%;
-    height: auto;
-    padding: 70px;
-    /*margin-left: 5em;*/
-}
-.warsztaty_img2{
+.warsztaty_img{
     width: 400px;
     height: auto;
     max-width: 80%;
@@ -564,7 +505,7 @@ header .logo{
         padding-bottom: 2em;
         padding-top: 2em;
     }
-    .warsztaty_text1, .warsztaty_text2{
+    .warsztaty_text{
         width: 100%;
         max-width: none;
         padding: 30px;
@@ -572,6 +513,71 @@ header .logo{
         text-align: center;
     }
     .warsztaty_content{
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Sekcja funip */
+#funip{
+    margin: 0;
+}
+.funip_bg{
+    margin: 0;
+    text-align: center;
+    float: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-position: center;
+    background-size: cover;
+}
+.funip_white{
+    color: black;
+    background-color: var(--knik-white);
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+.funip_text{
+    width: 50%;
+    height: auto;
+    padding: 70px;
+    /*margin-left: 5em;*/
+}
+.funip_img{
+    width: 400px;
+    height: auto;
+    max-width: 80%;
+    max-height: auto;
+    padding: 20px;
+}
+.funip_content{
+    float: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-bottom: 6em;
+    padding-top: 6em;*/
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 800px) {
+    .funip_white{
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+    .funip_text{
+        width: 100%;
+        max-width: none;
+        padding: 30px;
+        margin: 0;
+        text-align: center;
+    }
+    .funip_content{
         width: 100%;
         max-width: none;
         display: flex;
@@ -601,10 +607,6 @@ header .logo{
 }
 .studenci_bg{
     margin: 0;
-    /*background-color: rgba(10, 10, 10);*/
-        /*efekt scrollu background: fixed*/
-    /*background: fixed;*/
-    /*background-repeat: no-repeat;*/
     text-align: center;
     float: center;
     padding-top: 8%;
@@ -613,9 +615,8 @@ header .logo{
     background-size: cover;
 }
 .studenci_white{
-    /*margin: 0;*/
     color: black;
-    background-color: rgb(249, 247, 255);
+    background-color: var(--knik-white);
     padding-bottom: 5em;
     padding-top: 5em;
 }
@@ -623,13 +624,13 @@ header .logo{
 
 /* Karuzela */
 :root {
-    --black: #151515;
+    --black: rgb(21, 21, 21);
     --black-90: rgba(21, 21, 21, .9);
     --black-75: rgba(21, 21, 21, .75);
     --black-50: rgba(21, 21, 21, .5);
-    --bg-1: #E3CFCF;
-    --bg-2: #E9E9E9;
-    --accent: #E36262;
+    --bg-1: rgb(219, 217, 225);
+    --bg-2: var(--knik-white);
+    --accent: rgb(129, 127, 235);
     --primary-ff: 'Rajdhani', sans-serif;
     --secondary-ff: 'Rajdhani', sans-serif;
 }
@@ -642,12 +643,10 @@ header .logo{
     max-width: 46rem;
     margin: auto;
 }
-
 .container_slider.wide {
     max-width: 100%;
     padding: 0 4rem;
 }
-
 /* Swiper */
 .swiper-slide img {
     display: block;
@@ -659,12 +658,12 @@ header .logo{
     position: relative;
     margin: 0;
     overflow: hidden;
+    text-align: -webkit-center;
 }
-
 .swiper-slide figcaption {
     position: absolute;
     bottom: 0;
-    color: #fff;
+    color: var(--knik-white);
     font-size: 17px;
     font-family: var(--secondary-ff);
     line-height: 29px;
@@ -678,19 +677,20 @@ header .logo{
     transform: translate3d(-50%, 100%, 0);
     opacity: 0;
     transition: all .3s ease-in-out;
-    /*display: none;*/
+    width: 70%;
+    height: auto;
 }
 .swiper-slide-active figcaption {
     transform: translate3d(-50%, 0, 0);
     opacity: 1;
+    width: 24rem;
+    height: auto;
 }
 .swiper-slide figcaption img {
     width: auto;
     height: auto;
     object-fit: contain;
 }
-
-
 .swiper-pagination {
     bottom: 2rem;
 }
@@ -704,8 +704,6 @@ header .logo{
 .swiper-pagination-bullet-active {
     background-color: var(--accent);
 }
-
-
 .swiper-custom-nav {
     position: absolute;
     top: 50%;
@@ -734,11 +732,10 @@ header .logo{
     gap: 1rem;
     font-family: var(--secondary-ff);
     font-size: 17px;
-    line-height: 29px;
+    line-height: 28px;
     font-weight: 500;
     color: var(--black);
 }
-
 .swiper-custom-pagination .swiper-pagination-bullet {
     width: auto;
     height: auto;
@@ -747,12 +744,10 @@ header .logo{
     opacity: 1;
     text-align: center;
 }
-
 .swiper-custom-pagination .number {
     opacity: 0;
     transition: all .3s ease-in-out;
 }
-
 .swiper-custom-pagination .line {
     opacity: .3;
     height: .25rem;
@@ -762,12 +757,10 @@ header .logo{
     border-radius: 4px;
     transition: all .3s ease-in-out;
 }
-
 .swiper-custom-pagination .swiper-pagination-bullet-active .number,
 .swiper-custom-pagination .swiper-pagination-bullet-active .line {
     opacity: 1;
 }
-
 .swiper-custom-pagination .swiper-pagination-bullet-active .line {
     width: 2rem;
 }
@@ -777,7 +770,6 @@ header .logo{
         height: 25rem;
         width: auto;
     }
-
     .swiper-slide figcaption {
         left: 0;
         transform: none;
@@ -785,18 +777,15 @@ header .logo{
         border-radius: 0;
         background-color: var(--black-90);
     }
-
     .swiper-custom-nav {
         display: none;
     }
-
     .swiper-pagination-bullet{
         margin: 0;
     }
     .swiper-custom-pagination {
-        display: flex;
-        /* width: 100%; */
-        padding-top: 2rem;
+        display: none;
+        /*padding-top: 2rem;*/
     }
 }
 /* Koniec karuzela */
@@ -817,7 +806,7 @@ header .logo{
 }
 .szk_srednie_white{
     color: black;
-    background-color: rgb(249, 247, 255);
+    background-color: var(--knik-white);
     padding-bottom: 5em;
     padding-top: 5em;
 }
@@ -833,26 +822,25 @@ header .logo{
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.szk_srednie_text1{
+.szk_srednie_text{
     width: 50%;
     height: auto;
     padding: 70px;
     /*margin-left: 5em;*/
 }
-.szk_srednie_img1{
+.szk_srednie_img{
     width: 400px;
     height: auto;
     max-width: 80%;
     max-height: auto;
     padding: 20px;
 }
-
 @media screen and (max-width: 800px) {
     .szk_srednie_white{
         padding-bottom: 2em;
         padding-top: 2em;
     }
-    .szk_srednie_text1, .szk_srednie_text2{
+    .szk_srednie_text{
         width: 100%;
         max-width: none;
         padding: 30px;
@@ -918,20 +906,32 @@ header .logo{
     padding: 15px;
     margin: 5px 2px;
 }
-.fa-facebook:hover, .fa-instagram:hover{
+.fa-facebook:hover, .fa-instagram:hover, .tiktok:hover, .fa-linkedin:hover{
     opacity: 0.8;
+}
+.tiktok{
+    width: 18px;
+    height: auto;
 }
 .email{
     display: inline;
 }
 @media screen and (max-width: 800px) {
+    .fa{
+        display: inline-flex;
+        justify-content: center;
+    }
+    #footer .logo{
+        display: inline-flex;
+        justify-self: center;
+    }
     .footer_content{
-        font-size: 15px;
+        display: grid;
+        justify-content: center;
+        font-size: 20px;
     }
     .email{
         display: block;
+        float: inline-end;
     }
 }
-
-
-

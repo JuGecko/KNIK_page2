@@ -1,9 +1,9 @@
-new Swiper("#swiper-2", {
+new Swiper("#swiper", {
     slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 24,
     pagination: {
-        el: ("#swiper-2 .swiper-custom-pagination"),
+        el: ("#swiper .swiper-custom-pagination"),
         clickable: true,
         renderBullet: function (index, className) {
         return `<div class=${className}>
