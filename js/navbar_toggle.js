@@ -12,17 +12,3 @@ navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
-
-
-/* test
-
-var navbarmenu = document.getElementById("navbar-menu");
-
-function w3_open() {
-  if (navbarmenu.style.display === 'block') {
-    navbarmenu.style.display = 'none';
-  } else {
-    navbarmenu.style.display = 'block';
-  }
-}
-*/
